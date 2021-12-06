@@ -17,6 +17,9 @@ public class ThirdPersonMovement : MonoBehaviour
     public float jumpForce = 10f;
     public SphereCollider col;
 
+    public float maxSpeed = 4f;
+    
+
     
     public void Awake()
     {
@@ -32,6 +35,8 @@ public class ThirdPersonMovement : MonoBehaviour
     }
     void FixedUpdate()
     {
+        rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
+
         Move();
         
     }

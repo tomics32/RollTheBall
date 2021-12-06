@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 735, y: 492}
   m_MaxSize: {x: 16005, y: 14042}
   vertical: 0
-  controlID: 146
+  controlID: 60
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -253,7 +253,7 @@ MonoBehaviour:
   m_MinSize: {x: 460, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
-  controlID: 147
+  controlID: 118
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -279,7 +279,7 @@ MonoBehaviour:
   m_MinSize: {x: 460, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 148
+  controlID: 119
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -335,7 +335,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -21974
+  m_LastSelectedObjectID: 23062
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -460,22 +460,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/HDRPDefaultResources
+    - Assets/SampleSceneAssets/Settings
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/HDRPDefaultResources
+  - Assets/SampleSceneAssets/Settings
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\repos\RollTheBall\RollTheBall
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 1a5d0000
-    m_LastClickedID: 23834
-    m_ExpandedIDs: 00000000fc5c0000fe5c0000005d0000025d0000045d0000065d0000085d00000a5d00000c5d000000ca9a3b
+    scrollPos: {x: 0, y: 298}
+    m_SelectedIDs: 425e0000
+    m_LastClickedID: 24130
+    m_ExpandedIDs: 00000000d45d0000d65d0000d85d0000da5d0000dc5d0000de5d0000e05d0000e25d0000365e0000fa610000fc610000026200004e62000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -503,7 +503,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fc5c0000fe5c0000005d0000025d0000045d0000065d0000085d00000a5d00000c5d0000
+    m_ExpandedIDs: 00000000d45d0000d65d0000d85d0000da5d0000dc5d0000de5d0000e05d0000e25d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -624,9 +624,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 9a090100
-      m_LastClickedID: 67994
-      m_ExpandedIDs: f0c7feff36c9feff66ccfefff4d0fefffaeefeffeef4feff2270ffff04ddffffdae9ffff20ebffff54eeffff1efbffff98770000c67700001e780000f4080100d6090100760a0100
+      m_SelectedIDs: b25a0000
+      m_LastClickedID: 23218
+      m_ExpandedIDs: 8c9bfeff5efffeffa000ffffa21fffff3ef9ffff76faffff1cfbffff1efbffffd8590000105a00004adf0000b8f90000eafc00005cfd000084450100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -686,9 +686,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -42.720665, y: 1.5941182, z: -5.7795873}
+    m_Target: {x: -25.884512, y: -1.9873886, z: -13.163027}
     speed: 2
-    m_Value: {x: -42.720665, y: 1.5941182, z: -5.7795873}
+    m_Value: {x: -25.884512, y: -1.9873886, z: -13.163027}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -735,13 +735,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.02976873, y: 0.69770116, z: -0.032251485, w: -0.7159022}
+    m_Target: {x: -0.10332536, y: -0.89570624, z: 0.24646868, w: -0.3572939}
     speed: 2
-    m_Value: {x: -0.030822327, y: 0.69722354, z: -0.033278868, w: -0.7154172}
+    m_Value: {x: -0.10214518, y: -0.89669025, z: 0.24676198, w: -0.3530176}
   m_Size:
-    m_Target: 13.275918
+    m_Target: 10
     speed: 2
-    m_Value: 13.275918
+    m_Value: 10
   m_Ortho:
     m_Target: 0
     speed: 2
