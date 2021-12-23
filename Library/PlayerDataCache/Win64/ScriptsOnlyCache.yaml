@@ -1,6 +1,9 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp-Editor.dll:
+    - ReadmeEditor
     Assembly-CSharp.dll:
+    - Readme
     - Reset
     - ThirdPersonMovement
     Cinemachine.dll:
@@ -16,8 +19,19 @@ ScriptsOnlyBuild:
     - UnityEngine.InputSystem.InputSystemObject
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
     Unity.Postprocessing.Runtime.dll:
+    - UnityEngine.Rendering.PostProcessing.AmbientOcclusion
+    - UnityEngine.Rendering.PostProcessing.AutoExposure
+    - UnityEngine.Rendering.PostProcessing.Bloom
+    - UnityEngine.Rendering.PostProcessing.ChromaticAberration
+    - UnityEngine.Rendering.PostProcessing.ColorGrading
+    - UnityEngine.Rendering.PostProcessing.DepthOfField
+    - UnityEngine.Rendering.PostProcessing.Grain
+    - UnityEngine.Rendering.PostProcessing.LensDistortion
+    - UnityEngine.Rendering.PostProcessing.MotionBlur
     - UnityEngine.Rendering.PostProcessing.PostProcessLayer
     - UnityEngine.Rendering.PostProcessing.PostProcessResources
+    - UnityEngine.Rendering.PostProcessing.ScreenSpaceReflections
+    - UnityEngine.Rendering.PostProcessing.Vignette
     Unity.ProBuilder.Editor.dll:
     - UnityEditor.ProBuilder.EditorToolbar
     - UnityEditor.ProBuilder.ProBuilderEditor
@@ -78,6 +92,8 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.HighDefinition.VisualEnvironment
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.VisualEffectGraph.Editor.dll:
+    - UnityEditor.VFX.VFXResources
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -128,6 +144,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 72
+      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
@@ -145,141 +163,145 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1830}
+      Script: {instanceID: 3210}
     - Class: 114
-      Script: {instanceID: 1832}
+      Script: {instanceID: 3258}
     - Class: 114
-      Script: {instanceID: 1834}
+      Script: {instanceID: 3316}
     - Class: 114
-      Script: {instanceID: 1836}
+      Script: {instanceID: 3398}
     - Class: 114
-      Script: {instanceID: 1846}
+      Script: {instanceID: 3468}
     - Class: 114
-      Script: {instanceID: 1952}
+      Script: {instanceID: 3720}
     - Class: 114
-      Script: {instanceID: 2034}
+      Script: {instanceID: 3786}
     - Class: 114
-      Script: {instanceID: 2100}
+      Script: {instanceID: 3832}
     - Class: 114
-      Script: {instanceID: 2342}
+      Script: {instanceID: 4208}
     - Class: 114
-      Script: {instanceID: 2402}
+      Script: {instanceID: 4292}
     - Class: 114
-      Script: {instanceID: 2444}
+      Script: {instanceID: 4332}
     - Class: 114
-      Script: {instanceID: 2812}
+      Script: {instanceID: 4532}
     - Class: 114
-      Script: {instanceID: 2934}
+      Script: {instanceID: 4706}
     - Class: 114
-      Script: {instanceID: 3122}
+      Script: {instanceID: 4868}
     - Class: 114
-      Script: {instanceID: 3284}
+      Script: {instanceID: 4920}
     - Class: 114
-      Script: {instanceID: 3486}
+      Script: {instanceID: 5172}
     - Class: 114
-      Script: {instanceID: 3738}
+      Script: {instanceID: 5282}
     - Class: 114
-      Script: {instanceID: 3842}
+      Script: {instanceID: 5318}
     - Class: 114
-      Script: {instanceID: 3878}
+      Script: {instanceID: 5334}
     - Class: 114
-      Script: {instanceID: 3894}
+      Script: {instanceID: 5464}
     - Class: 114
-      Script: {instanceID: 4022}
+      Script: {instanceID: 5498}
     - Class: 114
-      Script: {instanceID: 4054}
+      Script: {instanceID: 5582}
     - Class: 114
-      Script: {instanceID: 4134}
+      Script: {instanceID: 5768}
     - Class: 114
-      Script: {instanceID: 4316}
+      Script: {instanceID: 5926}
     - Class: 114
-      Script: {instanceID: 4468}
+      Script: {instanceID: 6370}
     - Class: 114
-      Script: {instanceID: 4902}
+      Script: {instanceID: 6468}
     - Class: 114
-      Script: {instanceID: 5000}
+      Script: {instanceID: 6566}
     - Class: 114
-      Script: {instanceID: 5092}
+      Script: {instanceID: 6686}
     - Class: 114
-      Script: {instanceID: 5208}
+      Script: {instanceID: 6710}
     - Class: 114
-      Script: {instanceID: 5234}
+      Script: {instanceID: 6870}
     - Class: 114
-      Script: {instanceID: 5386}
+      Script: {instanceID: 6998}
     - Class: 114
-      Script: {instanceID: 5510}
+      Script: {instanceID: 7090}
     - Class: 114
-      Script: {instanceID: 5600}
+      Script: {instanceID: 7556}
     - Class: 114
-      Script: {instanceID: 6058}
+      Script: {instanceID: 7616}
     - Class: 114
-      Script: {instanceID: 6118}
+      Script: {instanceID: 7710}
     - Class: 114
-      Script: {instanceID: 6340}
+      Script: {instanceID: 7842}
     - Class: 114
-      Script: {instanceID: 6558}
+      Script: {instanceID: 7990}
     - Class: 114
-      Script: {instanceID: 6574}
+      Script: {instanceID: 8070}
     - Class: 114
-      Script: {instanceID: 6632}
+      Script: {instanceID: 8088}
     - Class: 114
-      Script: {instanceID: 6652}
+      Script: {instanceID: 8148}
     - Class: 114
-      Script: {instanceID: 6918}
+      Script: {instanceID: 8168}
     - Class: 114
-      Script: {instanceID: 6920}
+      Script: {instanceID: 8442}
     - Class: 114
-      Script: {instanceID: 6942}
+      Script: {instanceID: 8444}
     - Class: 114
-      Script: {instanceID: 7224}
+      Script: {instanceID: 8466}
     - Class: 114
-      Script: {instanceID: 7256}
+      Script: {instanceID: 8526}
     - Class: 114
-      Script: {instanceID: 7258}
+      Script: {instanceID: 8754}
     - Class: 114
-      Script: {instanceID: 7352}
+      Script: {instanceID: 8786}
     - Class: 114
-      Script: {instanceID: 7410}
+      Script: {instanceID: 8790}
     - Class: 114
-      Script: {instanceID: 7604}
+      Script: {instanceID: 8888}
     - Class: 114
-      Script: {instanceID: 7704}
+      Script: {instanceID: 8946}
     - Class: 114
-      Script: {instanceID: 7712}
+      Script: {instanceID: 9140}
     - Class: 114
-      Script: {instanceID: 7840}
+      Script: {instanceID: 9246}
     - Class: 114
-      Script: {instanceID: 7856}
+      Script: {instanceID: 9254}
     - Class: 114
-      Script: {instanceID: 7904}
+      Script: {instanceID: 9384}
     - Class: 114
-      Script: {instanceID: 7908}
+      Script: {instanceID: 9400}
     - Class: 114
-      Script: {instanceID: 7964}
+      Script: {instanceID: 9448}
     - Class: 114
-      Script: {instanceID: 8022}
+      Script: {instanceID: 9452}
     - Class: 114
-      Script: {instanceID: 8080}
+      Script: {instanceID: 9510}
     - Class: 114
-      Script: {instanceID: 8210}
+      Script: {instanceID: 9572}
     - Class: 114
-      Script: {instanceID: 8402}
+      Script: {instanceID: 9630}
     - Class: 114
-      Script: {instanceID: 8556}
+      Script: {instanceID: 9768}
     - Class: 114
-      Script: {instanceID: 8630}
+      Script: {instanceID: 9958}
     - Class: 114
-      Script: {instanceID: 9536}
+      Script: {instanceID: 10120}
     - Class: 114
-      Script: {instanceID: 9566}
+      Script: {instanceID: 10196}
     - Class: 114
-      Script: {instanceID: 9948}
+      Script: {instanceID: 11112}
     - Class: 114
-      Script: {instanceID: 10140}
+      Script: {instanceID: 11142}
     - Class: 114
-      Script: {instanceID: 10288}
+      Script: {instanceID: 11534}
     - Class: 114
-      Script: {instanceID: 23276}
+      Script: {instanceID: 11738}
+    - Class: 114
+      Script: {instanceID: 11884}
+    - Class: 114
+      Script: {instanceID: 45756}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -309,40 +331,16 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: bcaee4c2a83047257b5f47d6ed264b75
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Toggle
-  - hash:
-      serializedVersion: 2
-      Hash: 699619b86d9359741a4f58540298c80b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
+      Hash: f69dfc6409fbbd89d3689368e99688a8
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerVector2
   - hash:
       serializedVersion: 2
       Hash: a6e561615949734e9f12f9b61661f43e
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
-  - hash:
-      serializedVersion: 2
-      Hash: ae83e830e7a90c0aff918c4c2e520825
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: GraphicRaycaster
-  - hash:
-      serializedVersion: 2
-      Hash: 748dd2a2a28da4e618912da5ac45684b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.EventSystems
-    className: StandaloneInputModule
-  - hash:
-      serializedVersion: 2
-      Hash: f69dfc6409fbbd89d3689368e99688a8
-    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
-    namespaceName: UnityEngine.Rendering.UI
-    className: DebugUIHandlerVector2
   - hash:
       serializedVersion: 2
       Hash: c24a778d9aa393e11e54bff320ca63de
@@ -451,6 +449,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.HID.Editor
     className: HIDDescriptorWindow
+  - hash:
+      serializedVersion: 2
+      Hash: 29cb5ccadda8ab62d8dba6d24d61faa4
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.UI
+    className: VirtualMouseInput
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -783,6 +787,12 @@ ScriptsOnlyBuild:
     className: TestRunCallbackListener
   - hash:
       serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
       Hash: d94b1995a307ca1c2944a3fe39aa705e
     assemblyName: Unity.RenderPipelines.HighDefinition.Runtime.dll
     namespaceName: UnityEngine.Rendering.HighDefinition
@@ -1101,7 +1111,7 @@ ScriptsOnlyBuild:
     className: ParticleSystemMultiplier
   - hash:
       serializedVersion: 2
-      Hash: 295852e83016219fe0ab9a38fc36f74a
+      Hash: d79be48f820686024dd0d9e080d7733b
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem
     className: InputActionAsset
@@ -1243,6 +1253,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.ProBuilder.Examples.dll
     namespaceName: ProBuilder.Examples
     className: CameraControls
+  - hash:
+      serializedVersion: 2
+      Hash: 9b5cbb085ce6cd41d028e7715ecde397
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ForbidRotation
   - hash:
       serializedVersion: 2
       Hash: ad4af01eeb7f0a9ae0be2df3e0f1953a
@@ -1407,7 +1423,7 @@ ScriptsOnlyBuild:
     className: ProbeVolumeController
   - hash:
       serializedVersion: 2
-      Hash: fa4b351435ad6bd68a174ad43349ee64
+      Hash: 02ebe1405823e649f7905b5e32660417
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ThirdPersonMovement
@@ -1449,7 +1465,7 @@ ScriptsOnlyBuild:
     className: ScreenSpaceReflections
   - hash:
       serializedVersion: 2
-      Hash: 880d064aa7bf32abd8295b0fe07bcc13
+      Hash: c5fd7bfc1806f78178f8b5f91e072387
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem
     className: InputSystemObject
@@ -1659,6 +1675,12 @@ ScriptsOnlyBuild:
     className: VFXPositionBinder
   - hash:
       serializedVersion: 2
+      Hash: bcaee4c2a83047257b5f47d6ed264b75
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Toggle
+  - hash:
+      serializedVersion: 2
       Hash: da14535bb05f94583c7536a845dfa9f6
     assemblyName: Unity.VisualEffectGraph.Runtime.dll
     namespaceName: UnityEngine.VFX.Utility
@@ -1777,6 +1799,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: GroupTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 699619b86d9359741a4f58540298c80b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
   - hash:
       serializedVersion: 2
       Hash: f00ca901b734f71f99db8f25241154c4
@@ -2019,6 +2047,12 @@ ScriptsOnlyBuild:
     className: ThirdPersonUserControl
   - hash:
       serializedVersion: 2
+      Hash: 748dd2a2a28da4e618912da5ac45684b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: StandaloneInputModule
+  - hash:
+      serializedVersion: 2
       Hash: 9f17e81afd8bc34ca7104a80bf2da86e
     assemblyName: Unity.ProBuilder.Examples.dll
     namespaceName: ProBuilder.Examples
@@ -2145,12 +2179,6 @@ ScriptsOnlyBuild:
     className: Platformer2DUserControl
   - hash:
       serializedVersion: 2
-      Hash: e9389e944eb81a3a9df56fcdb09ce6a9
-    assemblyName: Unity.ProBuilder.dll
-    namespaceName: UnityEngine.ProBuilder
-    className: TriggerBehaviour
-  - hash:
-      serializedVersion: 2
       Hash: f79e983672d079ff24eee15484fb74b8
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
@@ -2173,6 +2201,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Utility
     className: WaypointProgressTracker
+  - hash:
+      serializedVersion: 2
+      Hash: e9389e944eb81a3a9df56fcdb09ce6a9
+    assemblyName: Unity.ProBuilder.dll
+    namespaceName: UnityEngine.ProBuilder
+    className: TriggerBehaviour
   - hash:
       serializedVersion: 2
       Hash: d3f29ba27f28c1f558880c4df5545ed3
@@ -2343,7 +2377,7 @@ ScriptsOnlyBuild:
     className: CinemachineShot
   - hash:
       serializedVersion: 2
-      Hash: 6be939d6f0aad748aa63a8815400aaa2
+      Hash: da582d98ca3927dc62f0e96e967a4a74
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem
     className: InputSettings
@@ -2469,22 +2503,22 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
-      Hash: f17a7afbb6fc4d6b5c3ba20ed1c93f68
+      Hash: 75d82cdc8c4eb5f12570aa378266875e
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.UI
     className: InputSystemUIInputModule
-  - hash:
-      serializedVersion: 2
-      Hash: 38bcb4d3f9a1812fd650f92e87a4cf64
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: PostProcessProfile
   - hash:
       serializedVersion: 2
       Hash: 50c443b12ccc0b475183318b5088bcc5
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
     className: PostProcessDebug
+  - hash:
+      serializedVersion: 2
+      Hash: 38bcb4d3f9a1812fd650f92e87a4cf64
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessProfile
   - hash:
       serializedVersion: 2
       Hash: 040dd48e3a027d5424519a5fa2009df4
@@ -2559,7 +2593,7 @@ ScriptsOnlyBuild:
     className: CarUserControl
   - hash:
       serializedVersion: 2
-      Hash: a8afcbd0a467dd957879959591dec288
+      Hash: 72763ba72b43403ee09a4c54b07cb346
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.XR
     className: TrackedPoseDriver
@@ -2715,7 +2749,7 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: 21a597af000da536a7adc9efe10b8d5d
+      Hash: 766d1e816bcaf02d44dc1df06af2bf9a
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem
     className: PlayerInputManager
@@ -2764,4 +2798,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/tomi/Desktop/RollTheBall 0.23/RollTheBall.exe
+  playerPath: C:/Users/tomi/Desktop/RollTheBall 0.26/RollTheBall.exe

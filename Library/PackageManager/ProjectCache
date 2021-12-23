@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637698448726086547
-    m_Hash: 1709455989
+      ticks: 637758606204971823
+    m_Hash: 1501918866
   m_LockFileStatus:
     m_FilePath: D:/repos/RollTheBall/RollTheBall/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637698448726146392
-    m_Hash: 3296358888
+      ticks: 637758606624007670
+    m_Hash: 1117335008
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -95,6 +95,7 @@ m_PackageAssets:
         - 2.8.1
         - 2.8.2
         - 2.8.3
+        - 2.8.4
         - 2.9.0-pre.1
         compatible:
         - 2.5.0
@@ -128,6 +129,7 @@ m_PackageAssets:
         - 2.8.1
         - 2.8.2
         - 2.8.3
+        - 2.8.4
         - 2.9.0-pre.1
         verified: 2.6.11
       dependencies: []
@@ -175,12 +177,12 @@ m_PackageAssets:
         url: git+https://github.com/Unity-Technologies/com.unity.cinemachine.git
         revision: 21f619698ca31d69054e96556e03097e48e43c5d
         path: 
-    - packageId: com.unity.collab-proxy@1.11.2
+    - packageId: com.unity.collab-proxy@1.15.4
       testable: 0
       isDirectDependency: 1
-      version: 1.11.2
+      version: 1.15.4
       source: 1
-      resolvedPath: D:\repos\RollTheBall\RollTheBall\Library\PackageCache\com.unity.collab-proxy@1.11.2
+      resolvedPath: D:\repos\RollTheBall\RollTheBall\Library\PackageCache\com.unity.collab-proxy@1.15.4
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Version Control
@@ -227,8 +229,10 @@ m_PackageAssets:
         - 1.13.5
         - 1.14.1
         - 1.14.4
+        - 1.14.7
         - 1.15.1
         - 1.15.4
+        - 1.15.7
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -240,13 +244,8 @@ m_PackageAssets:
         - 2.1.0-preview.5
         - 2.1.0-preview.6
         compatible:
-        - 1.11.2
-        - 1.12.5
-        - 1.13.5
-        - 1.14.1
-        - 1.14.4
-        - 1.15.1
         - 1.15.4
+        - 1.15.7
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -257,9 +256,19 @@ m_PackageAssets:
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
-        verified: 1.11.2
-      dependencies: []
-      resolvedDependencies: []
+        verified: 1.15.7
+      dependencies:
+      - name: com.unity.nuget.newtonsoft-json
+        version: 2.0.0
+      - name: com.unity.services.core
+        version: 1.0.1
+      resolvedDependencies:
+      - name: com.unity.nuget.newtonsoft-json
+        version: 2.0.0
+      - name: com.unity.services.core
+        version: 1.0.1
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
       keywords:
       - backup
       - cloud
@@ -286,13 +295,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637679178630000000
+      datePublishedTicks: 637726568460000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-        revision: 3bc7fe2ab9acbe4538785fec6100ac17fe9e8da5
+        revision: 1275603954ad33bee601fe2c9a3c787b3d4e4c6b
         path: 
     - packageId: com.unity.ide.rider@2.0.7
       testable: 0
@@ -401,12 +410,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
         revision: abb44f053e9a41d2e00e149e32a19bcec76e98b4
         path: 
-    - packageId: com.unity.ide.visualstudio@2.0.11
+    - packageId: com.unity.ide.visualstudio@2.0.12
       testable: 0
       isDirectDependency: 1
-      version: 2.0.11
+      version: 2.0.12
       source: 1
-      resolvedPath: D:\repos\RollTheBall\RollTheBall\Library\PackageCache\com.unity.ide.visualstudio@2.0.11
+      resolvedPath: D:\repos\RollTheBall\RollTheBall\Library\PackageCache\com.unity.ide.visualstudio@2.0.12
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -482,13 +491,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637613656180000000
+      datePublishedTicks: 637720564750000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-        revision: 680e06d94ffca728223ae2cb14bb919cd354e2c1
+        revision: 8d436ff053b9c59677b5e9799208143553cd02d9
         path: 
     - packageId: com.unity.ide.vscode@1.2.4
       testable: 0
@@ -561,12 +570,12 @@ m_PackageAssets:
         url: git+https://github.com/Unity-Technologies/com.unity.ide.vscode.git
         revision: 1f4f605d5c988cb610c372b5c5216c46cc8f5d30
         path: 
-    - packageId: com.unity.inputsystem@1.0.2
+    - packageId: com.unity.inputsystem@1.2.0
       testable: 0
       isDirectDependency: 1
-      version: 1.0.2
+      version: 1.2.0
       source: 1
-      resolvedPath: D:\repos\RollTheBall\RollTheBall\Library\PackageCache\com.unity.inputsystem@1.0.2
+      resolvedPath: D:\repos\RollTheBall\RollTheBall\Library\PackageCache\com.unity.inputsystem@1.2.0
       assetPath: Packages/com.unity.inputsystem
       name: com.unity.inputsystem
       displayName: Input System
@@ -645,9 +654,21 @@ m_PackageAssets:
         - 1.1.0-preview.3
         - 1.1.1
         - 1.2.0
-        verified: 1.0.2
-      dependencies: []
-      resolvedDependencies: []
+        verified: 1.2.0
+      dependencies:
+      - name: com.unity.modules.uielements
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.modules.uielements
+        version: 1.0.0
+      - name: com.unity.modules.ui
+        version: 1.0.0
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
+      - name: com.unity.modules.uielementsnative
+        version: 1.0.0
       keywords:
       - input
       - events
@@ -669,13 +690,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637468486210000000
+      datePublishedTicks: 637714457070000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
-        url: git+https://github.com/Unity-Technologies/InputSystem.git
-        revision: 041def76515febb36a83d1f928cfb7aefb85176c
+        url: https://github.com/Unity-Technologies/InputSystem.git
+        revision: 0343e557f75946cf6fad4be48dd10276d535f490
         path: 
     - packageId: com.unity.postprocessing@3.1.1
       testable: 0
@@ -740,7 +761,7 @@ m_PackageAssets:
         - 3.1.0
         - 3.1.1
         - 3.2.0
-        verified: 3.1.1
+        verified: 3.2.0
       dependencies:
       - name: com.unity.modules.physics
         version: 1.0.0
@@ -908,12 +929,12 @@ m_PackageAssets:
         url: https://github.com/Unity-Technologies/com.unity.probuilder.git
         revision: 27f52072e5f94638d1f81bc53df38e59d5bac785
         path: 
-    - packageId: com.unity.render-pipelines.high-definition@10.6.0
+    - packageId: com.unity.render-pipelines.high-definition@10.7.0
       testable: 0
       isDirectDependency: 1
-      version: 10.6.0
+      version: 10.7.0
       source: 1
-      resolvedPath: D:\repos\RollTheBall\RollTheBall\Library\PackageCache\com.unity.render-pipelines.high-definition@10.6.0
+      resolvedPath: D:\repos\RollTheBall\RollTheBall\Library\PackageCache\com.unity.render-pipelines.high-definition@10.7.0
       assetPath: Packages/com.unity.render-pipelines.high-definition
       name: com.unity.render-pipelines.high-definition
       displayName: High Definition RP
@@ -1025,36 +1046,43 @@ m_PackageAssets:
         - 10.5.1
         - 10.6.0
         - 10.7.0
+        - 10.8.0
+        - 10.8.1
         compatible:
-        - 10.6.0
         - 10.7.0
-        verified: 10.6.0
+        - 10.8.0
+        - 10.8.1
+        verified: 10.7.0
       dependencies:
       - name: com.unity.render-pipelines.core
-        version: 10.6.0
+        version: 10.7.0
       - name: com.unity.shadergraph
-        version: 10.6.0
+        version: 10.7.0
       - name: com.unity.visualeffectgraph
-        version: 10.6.0
+        version: 10.7.0
       - name: com.unity.render-pipelines.high-definition-config
-        version: 10.6.0
+        version: 10.7.0
       resolvedDependencies:
       - name: com.unity.render-pipelines.core
-        version: 10.6.0
+        version: 10.7.0
       - name: com.unity.ugui
         version: 1.0.0
       - name: com.unity.modules.ui
         version: 1.0.0
       - name: com.unity.modules.imgui
         version: 1.0.0
+      - name: com.unity.modules.physics
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
       - name: com.unity.shadergraph
-        version: 10.6.0
+        version: 10.7.0
       - name: com.unity.searcher
         version: 4.3.2
       - name: com.unity.visualeffectgraph
-        version: 10.6.0
+        version: 10.7.0
       - name: com.unity.render-pipelines.high-definition-config
-        version: 10.6.0
+        version: 10.7.0
       keywords:
       - graphics
       - performance
@@ -1073,13 +1101,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637613657580000000
+      datePublishedTicks: 637678189790000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.com/Unity-Technologies/Graphics.git
-        revision: d645e6b498e293626bcb30ec32b652b9f584e9b5
+        revision: 65f895bbddc2d4875c1b605a1921764ddcb0f703
         path: 
     - packageId: com.unity.test-framework@1.1.29
       testable: 0
@@ -3361,12 +3389,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ext.nunit.git
         revision: 29ea4d6504a5f58fb3a6934db839aa80ae6d9d88
         path: 
-    - packageId: com.unity.render-pipelines.core@10.6.0
+    - packageId: com.unity.render-pipelines.core@10.7.0
       testable: 0
       isDirectDependency: 0
-      version: 10.6.0
+      version: 10.7.0
       source: 1
-      resolvedPath: D:\repos\RollTheBall\RollTheBall\Library\PackageCache\com.unity.render-pipelines.core@10.6.0
+      resolvedPath: D:\repos\RollTheBall\RollTheBall\Library\PackageCache\com.unity.render-pipelines.core@10.7.0
       assetPath: Packages/com.unity.render-pipelines.core
       name: com.unity.render-pipelines.core
       displayName: Core RP Library
@@ -3481,11 +3509,14 @@ m_PackageAssets:
         - 10.6.0
         - 10.7.0
         compatible:
-        - 10.6.0
         - 10.7.0
-        verified: 10.6.0
+        verified: 10.7.0
       dependencies:
       - name: com.unity.ugui
+        version: 1.0.0
+      - name: com.unity.modules.physics
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
         version: 1.0.0
       resolvedDependencies:
       - name: com.unity.ugui
@@ -3493,6 +3524,10 @@ m_PackageAssets:
       - name: com.unity.modules.ui
         version: 1.0.0
       - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.physics
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
         version: 1.0.0
       keywords: []
       registry:
@@ -3507,20 +3542,20 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637613656840000000
+      datePublishedTicks: 637678188680000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.com/Unity-Technologies/Graphics.git
-        revision: d645e6b498e293626bcb30ec32b652b9f584e9b5
+        revision: 65f895bbddc2d4875c1b605a1921764ddcb0f703
         path: 
-    - packageId: com.unity.shadergraph@10.6.0
+    - packageId: com.unity.shadergraph@10.7.0
       testable: 0
       isDirectDependency: 0
-      version: 10.6.0
+      version: 10.7.0
       source: 1
-      resolvedPath: D:\repos\RollTheBall\RollTheBall\Library\PackageCache\com.unity.shadergraph@10.6.0
+      resolvedPath: D:\repos\RollTheBall\RollTheBall\Library\PackageCache\com.unity.shadergraph@10.7.0
       assetPath: Packages/com.unity.shadergraph
       name: com.unity.shadergraph
       displayName: Shader Graph
@@ -3632,22 +3667,25 @@ m_PackageAssets:
         - 10.6.0
         - 10.7.0
         compatible:
-        - 10.6.0
         - 10.7.0
-        verified: 10.6.0
+        verified: 10.7.0
       dependencies:
       - name: com.unity.render-pipelines.core
-        version: 10.6.0
+        version: 10.7.0
       - name: com.unity.searcher
         version: 4.3.2
       resolvedDependencies:
       - name: com.unity.render-pipelines.core
-        version: 10.6.0
+        version: 10.7.0
       - name: com.unity.ugui
         version: 1.0.0
       - name: com.unity.modules.ui
         version: 1.0.0
       - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.physics
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
         version: 1.0.0
       - name: com.unity.searcher
         version: 4.3.2
@@ -3664,20 +3702,20 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637613662270000000
+      datePublishedTicks: 637678188860000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.com/Unity-Technologies/Graphics.git
-        revision: d645e6b498e293626bcb30ec32b652b9f584e9b5
+        revision: 65f895bbddc2d4875c1b605a1921764ddcb0f703
         path: 
-    - packageId: com.unity.visualeffectgraph@10.6.0
+    - packageId: com.unity.visualeffectgraph@10.7.0
       testable: 0
       isDirectDependency: 0
-      version: 10.6.0
+      version: 10.7.0
       source: 1
-      resolvedPath: D:\repos\RollTheBall\RollTheBall\Library\PackageCache\com.unity.visualeffectgraph@10.6.0
+      resolvedPath: D:\repos\RollTheBall\RollTheBall\Library\PackageCache\com.unity.visualeffectgraph@10.7.0
       assetPath: Packages/com.unity.visualeffectgraph
       name: com.unity.visualeffectgraph
       displayName: Visual Effect Graph
@@ -3759,24 +3797,27 @@ m_PackageAssets:
         - 10.6.0
         - 10.7.0
         compatible:
-        - 10.6.0
         - 10.7.0
-        verified: 10.6.0
+        verified: 10.7.0
       dependencies:
       - name: com.unity.shadergraph
-        version: 10.6.0
+        version: 10.7.0
       - name: com.unity.render-pipelines.core
-        version: 10.6.0
+        version: 10.7.0
       resolvedDependencies:
       - name: com.unity.shadergraph
-        version: 10.6.0
+        version: 10.7.0
       - name: com.unity.render-pipelines.core
-        version: 10.6.0
+        version: 10.7.0
       - name: com.unity.ugui
         version: 1.0.0
       - name: com.unity.modules.ui
         version: 1.0.0
       - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.physics
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
         version: 1.0.0
       - name: com.unity.searcher
         version: 4.3.2
@@ -3798,20 +3839,20 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637613663020000000
+      datePublishedTicks: 637678189220000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.com/Unity-Technologies/Graphics.git
-        revision: d645e6b498e293626bcb30ec32b652b9f584e9b5
+        revision: 65f895bbddc2d4875c1b605a1921764ddcb0f703
         path: 
-    - packageId: com.unity.render-pipelines.high-definition-config@10.6.0
+    - packageId: com.unity.render-pipelines.high-definition-config@10.7.0
       testable: 0
       isDirectDependency: 0
-      version: 10.6.0
+      version: 10.7.0
       source: 1
-      resolvedPath: D:\repos\RollTheBall\RollTheBall\Library\PackageCache\com.unity.render-pipelines.high-definition-config@10.6.0
+      resolvedPath: D:\repos\RollTheBall\RollTheBall\Library\PackageCache\com.unity.render-pipelines.high-definition-config@10.7.0
       assetPath: Packages/com.unity.render-pipelines.high-definition-config
       name: com.unity.render-pipelines.high-definition-config
       displayName: High Definition RP Config
@@ -3867,20 +3908,23 @@ m_PackageAssets:
         - 10.6.0
         - 10.7.0
         compatible:
-        - 10.6.0
         - 10.7.0
-        verified: 10.6.0
+        verified: 10.7.0
       dependencies:
       - name: com.unity.render-pipelines.core
-        version: 10.6.0
+        version: 10.7.0
       resolvedDependencies:
       - name: com.unity.render-pipelines.core
-        version: 10.6.0
+        version: 10.7.0
       - name: com.unity.ugui
         version: 1.0.0
       - name: com.unity.modules.ui
         version: 1.0.0
       - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.physics
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
         version: 1.0.0
       keywords: []
       registry:
@@ -3895,13 +3939,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637613657960000000
+      datePublishedTicks: 637678189260000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.com/Unity-Technologies/Graphics.git
-        revision: d645e6b498e293626bcb30ec32b652b9f584e9b5
+        revision: 65f895bbddc2d4875c1b605a1921764ddcb0f703
         path: 
     - packageId: com.unity.settings-manager@1.0.3
       testable: 0
@@ -3960,6 +4004,117 @@ m_PackageAssets:
         type: git
         url: git+https://github.com/Unity-Technologies/com.unity.settings-manager.git
         revision: 473664ccba1496294b741cf169740a5d54b3d0b6
+        path: 
+    - packageId: com.unity.nuget.newtonsoft-json@2.0.0
+      testable: 0
+      isDirectDependency: 0
+      version: 2.0.0
+      source: 1
+      resolvedPath: D:\repos\RollTheBall\RollTheBall\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0
+      assetPath: Packages/com.unity.nuget.newtonsoft-json
+      name: com.unity.nuget.newtonsoft-json
+      displayName: Newtonsoft Json
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: library
+      description: 'Newtonsoft Json for use in Unity projects and Unity packages.
+        Currently synced to version 12.0.2.
+
+
+        This package is used for advanced
+        json serialization and deserialization. Most Unity users will be better suited
+        using the existing json tools built into Unity.
+
+        To avoid assembly
+        clashes, please use this package if you intend to use Newtonsoft Json.'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 2.0.0
+        compatible:
+        - 2.0.0
+        verified: 2.0.0
+      dependencies: []
+      resolvedDependencies: []
+      keywords: []
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git
+        revision: d2fd6ed876261bbd82f59199ad711e7667bf633a
+        path: 
+    - packageId: com.unity.services.core@1.0.1
+      testable: 0
+      isDirectDependency: 0
+      version: 1.0.1
+      source: 1
+      resolvedPath: D:\repos\RollTheBall\RollTheBall\Library\PackageCache\com.unity.services.core@1.0.1
+      assetPath: Packages/com.unity.services.core
+      name: com.unity.services.core
+      displayName: Services Core
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: 'This package defines common components used by multiple Game
+        Service packages.
+
+        These are standardized and aim to unify the overall
+        experience of working with Game Services packages.'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.1
+        compatible:
+        - 1.0.1
+        verified: 1.0.1
+      dependencies:
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      keywords: []
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
+        revision: 4cd880d4fd5c60597629249bf4f324e4c8d7aa2e
         path: 
     - packageId: com.unity.searcher@4.3.2
       testable: 0
@@ -4042,4 +4197,4 @@ m_PackageAssets:
   m_LocalPackages:
     m_LocalFileStatus: []
 m_ProjectPath: D:/repos/RollTheBall/RollTheBall/Packages
-m_EditorVersion: 2020.3.20f1 (41c4e627c95f)
+m_EditorVersion: 2020.3.25f1 (9b9180224418)
