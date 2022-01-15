@@ -18,6 +18,8 @@ public class ThirdPersonMovement : MonoBehaviour
     public SphereCollider col;
 
     public float maxSpeed = 4f;
+
+    
     
 
     
@@ -65,7 +67,10 @@ public class ThirdPersonMovement : MonoBehaviour
     {
         if (isGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
+            
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            gameObject.GetComponent<AudioSource>().Play();
+            
         }
     }
 
