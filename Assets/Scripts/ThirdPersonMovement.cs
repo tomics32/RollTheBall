@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class ThirdPersonMovement : MonoBehaviour
 {
     
@@ -19,12 +20,14 @@ public class ThirdPersonMovement : MonoBehaviour
 
     public float maxSpeed = 4f;
 
-    
-    
+
+
 
     
+
     public void Awake()
     {
+        
         rb = GetComponent<Rigidbody>();
         col = GetComponent<SphereCollider>();
         Cursor.lockState = CursorLockMode.Locked;
@@ -81,6 +84,6 @@ public class ThirdPersonMovement : MonoBehaviour
     }
 
 
-    
+	
 
 }
