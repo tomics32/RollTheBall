@@ -32,6 +32,7 @@ public class ThirdPersonMovement : MonoBehaviour
         col = GetComponent<SphereCollider>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        
     }
     void Update()
     {
@@ -47,10 +48,10 @@ public class ThirdPersonMovement : MonoBehaviour
     }
     private void ProcessInputs()
     {
-        xInput = Input.GetAxis("Horizontal");
-        zInput = Input.GetAxis("Vertical");
         
-        
+            xInput = Input.GetAxis("Horizontal");
+            zInput = Input.GetAxis("Vertical");
+
     }
     private void Move()
     {
