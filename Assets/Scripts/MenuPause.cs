@@ -39,6 +39,13 @@ public class MenuPause : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
     }
 
+    public void RestartScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1f;
+        Cursor.visible = false;
+        GameIsPaused = false;
+    }
     public void LoadMenu()
     {
         PauseMenuUI.SetActive(false);

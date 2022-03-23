@@ -11,18 +11,18 @@ public class CountDownTimer : MonoBehaviour
     [SerializeField]float startingTime = 10f;
 	CultureInfo culture = CultureInfo.CreateSpecificCulture("en-us");
 	public bool isPaused = false;
-
+	public bool isLessThanFive = false;
+	
 	[SerializeField] Text countDownText;
 
 	List<GameObject> objectsInScene = new List<GameObject>();
 
-
-	
+	Animator anim;
 
 	private void Start()
 	{
-		
 		currentTime = startingTime;
+		anim = gameObject.GetComponent<Animator>();
 		
 	}
 
@@ -48,13 +48,22 @@ public class CountDownTimer : MonoBehaviour
 			currentTime = 0;
 		}
 
-		if(currentTime <= 10 && currentTime > 5)
+		if (currentTime <= 10 && currentTime > 5)
 		{
 			countDownText.color = Color.yellow;
 		}
-		else if (currentTime <= 5)
+		else if (currentTime <= 5 && isLessThanFive == false)
 		{
 			countDownText.color = Color.red;
+			countDownText.transform.position = countDownText.transform.position + new Vector3(880, -100, 0);
+			countDownText.fontSize = 150;
+			countDownText.fontStyle = FontStyle.Bold;
+			isLessThanFive = true;
 		}
+		else if (currentTime <= 5)
+		{
+			anim.Play("BiggerSmaller");
+		}
+
 	}
 }
