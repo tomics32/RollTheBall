@@ -107,7 +107,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateEditor
     - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
@@ -269,7 +268,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10448}
     - Class: 114
-      Script: {instanceID: 23844}
+      Script: {instanceID: 23856}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -854,7 +853,7 @@ ScriptsOnlyBuild:
     className: PostProcessLayer
   - hash:
       serializedVersion: 2
-      Hash: c54e5d238d05f0415928866fafbf602e
+      Hash: 12cf9656ff9208a2d3bbfa2c03887cbe
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SceneController
@@ -2498,7 +2497,7 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 5cdcba81829dd90502f88480c191c2c9
+      Hash: 928171555fc69cc534bedb7179c270ea
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MenuPause
@@ -3034,4 +3033,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Level 1.unity
-  playerPath: C:/Users/tomi/Desktop/RollTheBall 0.40/RollTheBall.exe
+  playerPath: C:/Users/tomi/Desktop/RollTheBall 0.41/RollTheBall.exe

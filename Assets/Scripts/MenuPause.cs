@@ -6,6 +6,9 @@ public class MenuPause : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject PauseMenuUI;
+    public GameObject Ball;
+    public GameObject Camera;
+    public GameObject CountDown;
 
 
     // Update is called once per frame
@@ -48,11 +51,11 @@ public class MenuPause : MonoBehaviour
     }
     public void LoadMenu()
     {
-        PauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("Start Menu");
         GameIsPaused = false;
-        Cursor.visible = true;
+        Time.timeScale = 1f;
+        Ball.GetComponent<Rigidbody>().isKinematic = true;
+        Camera.SetActive(false);
+        CountDown.SetActive(false);
     }
 
     public void Quit()
