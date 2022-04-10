@@ -8,6 +8,7 @@ ScriptsOnlyBuild:
     - Reset
     - SceneController
     - SettingsMenu
+    - StartCountDown
     - ThirdPersonMovement
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
@@ -107,6 +108,7 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateEditor
     - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
@@ -256,19 +258,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7998}
     - Class: 114
-      Script: {instanceID: 8080}
+      Script: {instanceID: 8036}
     - Class: 114
-      Script: {instanceID: 8144}
+      Script: {instanceID: 8082}
     - Class: 114
-      Script: {instanceID: 8268}
+      Script: {instanceID: 8146}
     - Class: 114
-      Script: {instanceID: 8880}
+      Script: {instanceID: 8270}
     - Class: 114
-      Script: {instanceID: 9848}
+      Script: {instanceID: 8882}
     - Class: 114
-      Script: {instanceID: 10448}
+      Script: {instanceID: 9850}
     - Class: 114
-      Script: {instanceID: 23856}
+      Script: {instanceID: 10450}
+    - Class: 114
+      Script: {instanceID: 23902}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -461,39 +465,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7998}
     - Class: 114
-      Script: {instanceID: 8080}
+      Script: {instanceID: 8082}
     - Class: 114
-      Script: {instanceID: 8096}
+      Script: {instanceID: 8098}
     - Class: 114
-      Script: {instanceID: 8144}
+      Script: {instanceID: 8146}
     - Class: 114
-      Script: {instanceID: 8148}
+      Script: {instanceID: 8150}
     - Class: 114
-      Script: {instanceID: 8206}
+      Script: {instanceID: 8208}
     - Class: 114
-      Script: {instanceID: 8268}
+      Script: {instanceID: 8270}
     - Class: 114
-      Script: {instanceID: 8324}
+      Script: {instanceID: 8326}
     - Class: 114
-      Script: {instanceID: 8462}
+      Script: {instanceID: 8464}
     - Class: 114
-      Script: {instanceID: 8652}
+      Script: {instanceID: 8654}
     - Class: 114
-      Script: {instanceID: 8814}
+      Script: {instanceID: 8816}
     - Class: 114
-      Script: {instanceID: 8892}
+      Script: {instanceID: 8894}
     - Class: 114
-      Script: {instanceID: 9358}
+      Script: {instanceID: 9360}
     - Class: 114
-      Script: {instanceID: 9818}
+      Script: {instanceID: 9820}
     - Class: 114
-      Script: {instanceID: 9848}
+      Script: {instanceID: 9850}
     - Class: 114
-      Script: {instanceID: 10242}
+      Script: {instanceID: 10244}
     - Class: 114
-      Script: {instanceID: 10448}
+      Script: {instanceID: 10450}
     - Class: 114
-      Script: {instanceID: 10596}
+      Script: {instanceID: 10598}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2215,6 +2219,12 @@ ScriptsOnlyBuild:
     className: TimedObjectDestructor
   - hash:
       serializedVersion: 2
+      Hash: 3da94e93580630f102b87a0c0f891c3e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StartCountDown
+  - hash:
+      serializedVersion: 2
       Hash: 8095377112f8efa486d0a285dbfee667
     assemblyName: Unity.RenderPipelines.HighDefinition.Runtime.dll
     namespaceName: UnityEngine.Rendering.HighDefinition
@@ -3033,4 +3043,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Level 1.unity
-  playerPath: C:/Users/tomi/Desktop/RollTheBall 0.41/RollTheBall.exe
+  playerPath: C:/Users/tomi/Desktop/RollTheBall 0.42/RollTheBall.exe

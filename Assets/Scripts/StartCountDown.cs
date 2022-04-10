@@ -34,22 +34,22 @@ public class StartCountDown : MonoBehaviour
         
         if (currentTime <= 3 && currentTime > 2)
         {
-            numbers[0].SetActive(true);
+            numbers[0].GetComponent<Animator>().Play("TopToBottom");
         }
         else if (currentTime <= 2 && currentTime > 1)
         {
             numbers[0].SetActive(false);
-            numbers[1].SetActive(true);
+            numbers[1].GetComponent<Animator>().Play("TopToBottom");
         }
         else if (currentTime <= 1 && currentTime > 0)
         {
             numbers[1].SetActive(false);
-            numbers[2].SetActive(true);
+            numbers[2].GetComponent<Animator>().Play("TopToBottom");
         }
         else if (currentTime <= 0 && currentTime > -1)
         {
             numbers[2].SetActive(false);
-            numbers[3].SetActive(true);
+            numbers[3].GetComponent<Animator>().Play("TopToBottom");
 
             roundTimer.SetActive(true);
             thirdPersonMovement.GetComponent<Rigidbody>().useGravity = true;
