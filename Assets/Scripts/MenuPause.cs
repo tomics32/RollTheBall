@@ -9,7 +9,7 @@ public class MenuPause : MonoBehaviour
     public GameObject Ball;
     public GameObject Camera;
     public GameObject CountDown;
-
+    public GameObject inGameMusic;
 
     // Update is called once per frame
     void Update()
@@ -22,6 +22,7 @@ public class MenuPause : MonoBehaviour
             }
             else
             {
+                inGameMusic.GetComponent<AudioSource>().Pause();
                 Pause();
             }
         }
@@ -31,6 +32,7 @@ public class MenuPause : MonoBehaviour
         PauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+        inGameMusic.GetComponent<AudioSource>().Play();
         Cursor.visible = false;
     }
     void Pause()

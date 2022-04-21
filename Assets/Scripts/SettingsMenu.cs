@@ -10,10 +10,16 @@ public class SettingsMenu : MonoBehaviour
 
 	public Dropdown resolutionDropdown;
 
+
 	Resolution[] resolutions;
+	public Slider[] masterSlider;
 
 	private void Start()
 	{
+		masterSlider[0].value = PlayerPrefs.GetFloat("MasterVolume", 0.75f);
+		masterSlider[1].value = PlayerPrefs.GetFloat("MusicVolume", 0.75f);
+		masterSlider[2].value = PlayerPrefs.GetFloat("EffectsVolume", 0.75f);
+
 		resolutions = Screen.resolutions;
 
 		resolutionDropdown.ClearOptions();
@@ -59,9 +65,22 @@ public class SettingsMenu : MonoBehaviour
 			Screen.SetResolution(1920, 1080, Screen.fullScreen);
 		}
 	}
-	public void SetVolume(float volume)
+	public void SetMasterVolume(float volume)
 	{
-		audioMixer.SetFloat("volume", volume);
+		audioMixer.SetFloat("generalVol", Mathf.Log10(volume) * 20);
+		PlayerPrefs.SetFloat("MasterVolume", volume);
+	}
+
+	public void SetMusicVolume(float volume)
+	{
+		audioMixer.SetFloat("musicVol", Mathf.Log10(volume) * 20);
+		PlayerPrefs.SetFloat("MusicVolume", volume);
+	}
+
+	public void SetEffectsVolume(float volume)
+	{
+		audioMixer.SetFloat("effectsVol", Mathf.Log10(volume) * 20);
+		PlayerPrefs.SetFloat("EffectsVolume", volume);
 	}
 
 

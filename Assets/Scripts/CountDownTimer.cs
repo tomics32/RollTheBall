@@ -12,7 +12,8 @@ public class CountDownTimer : MonoBehaviour
 	CultureInfo culture = CultureInfo.CreateSpecificCulture("en-us");
 	public bool isPaused = false;
 	public bool isLessThanFive = false;
-	
+	public GameObject inGameMusic;
+
 	[SerializeField] Text countDownText;
 
 	List<GameObject> objectsInScene = new List<GameObject>();
@@ -38,6 +39,7 @@ public class CountDownTimer : MonoBehaviour
 				if (go.name.Equals("GameOver") && go.activeSelf == false)
 				{
 					go.SetActive(true);
+					inGameMusic.GetComponent<AudioSource>().Pause();
 					Time.timeScale = 0f;
 					Cursor.visible = true;
 					Cursor.lockState = CursorLockMode.None;
@@ -55,7 +57,7 @@ public class CountDownTimer : MonoBehaviour
 		else if (currentTime <= 5 && isLessThanFive == false)
 		{
 			countDownText.color = Color.red;
-			countDownText.transform.position = countDownText.transform.position + new Vector3(880, -100, 0);
+			countDownText.transform.position = countDownText.transform.position + new Vector3(886, -100, 0);
 			countDownText.fontSize = 150;
 			countDownText.fontStyle = FontStyle.Bold;
 			isLessThanFive = true;
