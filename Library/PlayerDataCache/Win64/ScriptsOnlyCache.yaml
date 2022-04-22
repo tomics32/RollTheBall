@@ -10,6 +10,7 @@ ScriptsOnlyBuild:
     - SettingsMenu
     - StartCountDown
     - ThirdPersonMovement
+    - btnFX
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
     - Cinemachine.CinemachineCollider
@@ -105,10 +106,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -116,6 +115,7 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.EventTrigger
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
@@ -267,11 +267,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 8880}
     - Class: 114
+      Script: {instanceID: 9288}
+    - Class: 114
       Script: {instanceID: 9846}
     - Class: 114
       Script: {instanceID: 10444}
     - Class: 114
-      Script: {instanceID: 23916}
+      Script: {instanceID: 28390}
+    - Class: 114
+      Script: {instanceID: 38102}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -488,6 +492,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 8892}
     - Class: 114
+      Script: {instanceID: 9288}
+    - Class: 114
       Script: {instanceID: 9358}
     - Class: 114
       Script: {instanceID: 9816}
@@ -499,6 +505,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 10444}
     - Class: 114
       Script: {instanceID: 10592}
+    - Class: 114
+      Script: {instanceID: 28390}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -3040,8 +3048,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualEffectGraph.Runtime.dll
     namespaceName: UnityEngine.VFX.Utility
     className: VFXRaycastBinder
+  - hash:
+      serializedVersion: 2
+      Hash: 9107daad3417c1fd712a6123a203f1b7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: btnFX
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Level 1.unity
-  playerPath: C:/Users/tomi/Desktop/RollTheBall 0.49c/RollTheBall.exe
+  playerPath: C:/Users/tomi/Desktop/RollTheBall 0.50b/RollTheBall.exe
