@@ -20,10 +20,13 @@ public class ThirdPersonMovement : MonoBehaviour
 
     public float maxSpeed = 4f;
 
+    // Rolling sound
+
+    public AudioSource rollBall;
+    int startingPitch = 4;
+    float volumeSpeed = 4.5f;
 
 
-
-    
 
     public void Awake()
     {
@@ -32,19 +35,46 @@ public class ThirdPersonMovement : MonoBehaviour
         col = GetComponent<SphereCollider>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        
+
+
     }
     void Update()
     {
         ProcessInputs();
         Jump();
+        
     }
     void FixedUpdate()
     {
+      
+
         rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
 
+        rollBall.volume = Mathf.Clamp01(rb.velocity.magnitude / volumeSpeed);
+        rollBall.pitch = Mathf.Clamp(rb.velocity.magnitude / startingPitch, 0.1f, 2);
         Move();
         
+    }
+
+    
+    void OnCollisionStay(Collision collision)
+    {
+        if (rollBall.isPlaying == false && rb.angularVelocity.magnitude >= 0.5f && collision.gameObject.tag == "Ground")
+        {       
+            rollBall.Play();
+        }
+        else if (rollBall.isPlaying == true && rb.angularVelocity.magnitude < 0.5f && collision.gameObject.tag == "Ground")
+        {
+            rollBall.Pause();
+        }
+    }
+
+    void OnCollisionExit(Collision collision)
+    {
+        if (rollBall.isPlaying == true && collision.gameObject.tag == "Ground")
+        {
+            rollBall.Pause();
+        }
     }
     private void ProcessInputs()
     {

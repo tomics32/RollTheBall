@@ -109,10 +109,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -1683,7 +1681,7 @@ ScriptsOnlyBuild:
     className: ProbeVolumeController
   - hash:
       serializedVersion: 2
-      Hash: 02ebe1405823e649f7905b5e32660417
+      Hash: fd0fbcffd17bccad598ba48eca13430e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ThirdPersonMovement
@@ -3065,4 +3063,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Level 1.unity
-  playerPath: C:/Users/tomi/Desktop/RollTheBall 0.51/RollTheBall.exe
+  playerPath: C:/Users/tomi/Desktop/RollTheBall 0.52/RollTheBall.exe

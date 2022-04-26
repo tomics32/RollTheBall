@@ -7,6 +7,7 @@ TagManager:
   - Fire
   - Goal
   - BG
+  - Ground
   layers:
   - Default
   - TransparentFX
