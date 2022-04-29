@@ -10,6 +10,7 @@ public class MenuPause : MonoBehaviour
     public GameObject Camera;
     public GameObject CountDown;
     public GameObject inGameMusic;
+    public GameObject RollingSound;
 
     // Update is called once per frame
     void Update()
@@ -22,6 +23,7 @@ public class MenuPause : MonoBehaviour
             }
             else
             {
+                RollingSound.GetComponent<AudioSource>().Pause();
                 inGameMusic.GetComponent<AudioSource>().Pause();
                 Pause();
             }
@@ -32,6 +34,7 @@ public class MenuPause : MonoBehaviour
         PauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+        RollingSound.GetComponent<AudioSource>().Play();
         inGameMusic.GetComponent<AudioSource>().Play();
         Cursor.visible = false;
     }

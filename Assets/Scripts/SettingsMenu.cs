@@ -10,6 +10,8 @@ public class SettingsMenu : MonoBehaviour
 
 	public Dropdown resolutionDropdown;
 
+	public Button[] optionsSet;
+
 
 	Resolution[] resolutions;
 	public Slider[] masterSlider;
@@ -93,5 +95,21 @@ public class SettingsMenu : MonoBehaviour
 	public void SetFullScreen(bool isFullscreen)
 	{
 		Screen.fullScreen = isFullscreen;
+	}
+
+	public void DisableOptions()
+    {
+		for (int i = 0; i < optionsSet.Length; i++)
+        {
+			if (optionsSet[i].interactable == true)
+			{
+				optionsSet[i].interactable = false;
+			}
+			else if (optionsSet[i].interactable == false)
+            {
+				optionsSet[i].interactable = true;
+            }
+        }
+		
 	}
 }
