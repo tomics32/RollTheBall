@@ -68,6 +68,7 @@
     <Compile Include="Assets\SampleSceneAssets\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\Rocks and Boulders 2\Shaders\RotateGameObject.cs" />
+    <Compile Include="Assets\Scripts\Dissolve.cs" />
     <Compile Include="Assets\Scripts\ForbidRotation.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonMovement.cs" />
     <Compile Include="Assets\Scripts\SettingsMenu.cs" />
@@ -80,7 +81,7 @@
     <Compile Include="Assets\Scripts\MenuPause.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\IgniteCoders\Simple Water Shader\Resources\WaterReflection.cs" />
-    <Compile Include="Assets\Scripts\Dissolve.cs" />
+    <Compile Include="Assets\Scripts\LevelLoader.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

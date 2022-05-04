@@ -16,6 +16,7 @@ public class Dissolve : MonoBehaviour
     [SerializeField] float[] starTime;
     [SerializeField] Image[] stars;
     Color myColor = new Color32(255, 255, 255, 100);
+    public bool isPaused = false;
 
 
 
@@ -56,6 +57,7 @@ public class Dissolve : MonoBehaviour
         {
             stars[0].GetComponent<Image>().color = myColor;
         }
+        isPaused = true;
 
 
 

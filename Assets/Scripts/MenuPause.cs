@@ -11,15 +11,21 @@ public class MenuPause : MonoBehaviour
     public GameObject CountDown;
     public GameObject inGameMusic;
     public GameObject RollingSound;
+    Dissolve dissolve;
 
-    // Update is called once per frame
+    private void Start()
+    {
+        GameObject dissolving = GameObject.Find("GoalCube");
+        dissolve = dissolving.GetComponent<Dissolve>();
+    }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && dissolve.isPaused == false)
         {
             if (GameIsPaused)
             {
                 Resume();
+                
             }
             else
             {
