@@ -19,13 +19,14 @@ public class Dissolve : MonoBehaviour
     public GameObject gameCamera;
     MenuPause menuPause;
     public bool isPaused = false;
+    public GameObject pauseMenu;
 
 
 
 
     private void Start()
     {
-        GameObject pauseMenu = GameObject.Find("Canvas");
+        
         menuPause = pauseMenu.GetComponent<MenuPause>();
         
         anim = gameObject.GetComponent<Animator>();

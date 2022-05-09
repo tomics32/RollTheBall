@@ -12,6 +12,7 @@ public class MenuPause : MonoBehaviour
     public GameObject inGameMusic;
     public GameObject RollingSound;
     Dissolve dissolve;
+    public GameObject objectToActivate;
 
     private void Start()
     {
@@ -34,7 +35,7 @@ public class MenuPause : MonoBehaviour
                 Pause();
             }
         }
-        Debug.Log(GameIsPaused);
+        
     }
     public void Resume()
     {
@@ -75,4 +76,6 @@ public class MenuPause : MonoBehaviour
         Debug.Log("Quitting Game...");
         Application.Quit();
     }
+
+   
 }
