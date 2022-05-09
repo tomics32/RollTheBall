@@ -16,14 +16,17 @@ public class Dissolve : MonoBehaviour
     [SerializeField] float[] starTime;
     [SerializeField] Image[] stars;
     Color myColor = new Color32(255, 255, 255, 100);
+    public GameObject gameCamera;
+    MenuPause menuPause;
     public bool isPaused = false;
-
 
 
 
 
     private void Start()
     {
+        GameObject pauseMenu = GameObject.Find("Canvas");
+        menuPause = pauseMenu.GetComponent<MenuPause>();
         
         anim = gameObject.GetComponent<Animator>();
         myColor = Color.white;
@@ -34,14 +37,16 @@ public class Dissolve : MonoBehaviour
     {
         anim.Play("Dissolve");
         gameObject.GetComponent<AudioSource>().Play();
-        Invoke("DelayedMenu", 1);
+        StartCoroutine(DelayedMenu());
         timeLeft.text = countDownText.text;
         countDownText.gameObject.SetActive(false);
         timeToFloat = float.Parse(timeLeft.text, CultureInfo.InvariantCulture);
-
+        gameCamera.SetActive(false);
         
 
-        if(timeToFloat >= starTime[1])
+
+
+        if (timeToFloat >= starTime[1])
         {
             stars[2].GetComponent<Image>().color = myColor;
             stars[1].GetComponent<Image>().color = myColor;
@@ -57,16 +62,18 @@ public class Dissolve : MonoBehaviour
         {
             stars[0].GetComponent<Image>().color = myColor;
         }
-        isPaused = true;
+        
 
 
 
     }
-    public void DelayedMenu()
-    {     
+    public IEnumerator DelayedMenu()
+    {
+        yield return new WaitForSecondsRealtime(1);
         levelCompletedMenu.SetActive(true);
-        Time.timeScale = 0f;
+        menuPause.GameIsPaused = true;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+        isPaused = true;
     }
 }

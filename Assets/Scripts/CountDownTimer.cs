@@ -14,7 +14,7 @@ public class CountDownTimer : MonoBehaviour
 	public bool isPaused = false;
 	public bool isLessThanFive = false;
 	public GameObject inGameMusic;
-	Dissolve dissolve;
+	
 
 	[SerializeField] Text countDownText;
 
@@ -26,8 +26,7 @@ public class CountDownTimer : MonoBehaviour
 	{
 		currentTime = startingTime;
 		anim = gameObject.GetComponent<Animator>();
-		GameObject dissolving = GameObject.Find("GoalCube");
-		dissolve = dissolving.GetComponent<Dissolve>();
+		
 
 	}
 
@@ -47,7 +46,7 @@ public class CountDownTimer : MonoBehaviour
 					Time.timeScale = 0f;
 					Cursor.visible = true;
 					Cursor.lockState = CursorLockMode.None;
-					dissolve.isPaused = true;
+					
 				}
 			}
 

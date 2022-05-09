@@ -15,13 +15,16 @@ public class SceneController : MonoBehaviour
 	}
 
 	
+	
 	public void LoadLevel()
 	{
+		Time.timeScale = 1f;
 		StartCoroutine(LoadLevelTransition());
+		
 	}
 	public IEnumerator LoadLevelTransition()
 	{
-		yield return new WaitForSeconds(transitionTime);
+		yield return new WaitForSecondsRealtime(transitionTime);
 
 		SceneManager.LoadScene(levelName);
 	}

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MenuPause : MonoBehaviour
 {
-    public static bool GameIsPaused = false;
+    public bool GameIsPaused = false;
     public GameObject PauseMenuUI;
     public GameObject Ball;
     public GameObject Camera;
@@ -34,6 +34,7 @@ public class MenuPause : MonoBehaviour
                 Pause();
             }
         }
+        Debug.Log(GameIsPaused);
     }
     public void Resume()
     {
