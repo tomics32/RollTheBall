@@ -112,11 +112,7 @@ ScriptsOnlyBuild:
     - TMPro.TextMeshProUGUI
     Unity.Timeline.Editor.dll:
     - TimelinePreferences
-    - UnityEditor.Timeline.EditorClip
     - UnityEditor.Timeline.SequenceHierarchy
-    - UnityEditor.Timeline.Signals.SignalEmitterInspector
-    - UnityEditor.Timeline.Signals.SignalReceiverInspector
-    - UnityEditor.Timeline.TimelineAssetViewModel
     - UnityEditor.Timeline.TimelineWindow
     Unity.Timeline.dll:
     - UnityEngine.Timeline.AnimationPlayableAsset
@@ -133,6 +129,7 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateEditor
     - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
@@ -646,7 +643,7 @@ ScriptsOnlyBuild:
     className: HDAdditionalCameraData
   - hash:
       serializedVersion: 2
-      Hash: 48e4a49979ffd430980478f954c1b1af
+      Hash: d92a1e29e3833d338f941f45d4ad40b8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SignalController
@@ -1522,7 +1519,7 @@ ScriptsOnlyBuild:
     className: ColorAdjustments
   - hash:
       serializedVersion: 2
-      Hash: 2491ca975ef6b0da4507ec2bb54f9288
+      Hash: f3febd19317d422361e685821947c615
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Dissolve
@@ -2068,7 +2065,7 @@ ScriptsOnlyBuild:
     className: DepthOfField
   - hash:
       serializedVersion: 2
-      Hash: efb4a035469e26bccaf9cb09639048c4
+      Hash: 87b46fb88b5a5739872bdb92c8bedcbc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LevelLoader
@@ -3120,4 +3117,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Level 1.unity
-  playerPath: C:/Users/tomi/Desktop/RollTheBall 0.59/RollTheBall.exe
+  playerPath: C:/Users/tomi/Desktop/RollTheBall 0.611/RollTheBall.exe

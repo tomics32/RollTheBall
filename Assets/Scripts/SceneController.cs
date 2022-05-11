@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class SceneController : MonoBehaviour
 {
 	[SerializeField] string levelName;
 	public float transitionTime = 1f;
+
+	
 	public void RestartScene()
 	{
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -34,5 +37,6 @@ public class SceneController : MonoBehaviour
 	{
 		Application.Quit();
 	}
-	
+
+    
 }

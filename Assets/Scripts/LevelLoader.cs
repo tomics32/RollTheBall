@@ -7,6 +7,10 @@ public class LevelLoader : MonoBehaviour
 {
     public GameObject LoadingScreen;
     public Image loadingBarFill;
+    public GameObject fillBar;
+    public Text ContinueText;
+
+    Animator anim;
 
     public void LoadScene(int sceneId)
     {
@@ -27,9 +31,14 @@ public class LevelLoader : MonoBehaviour
             loadingBarFill.fillAmount = progressValue;
             if (progressValue >= 0.9f)
             {
+                fillBar.GetComponent<Animator>().Play("AlphaZero");
+                loadingBarFill.GetComponent<Animator>().Play("AlphaZero");
+                ContinueText.gameObject.SetActive(true);
+
                 if (Input.GetKeyDown(KeyCode.Space))
-                    
+                {
                     operation.allowSceneActivation = true;
+                }   
             }
             yield return null;
         }

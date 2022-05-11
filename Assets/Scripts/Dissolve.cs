@@ -20,6 +20,7 @@ public class Dissolve : MonoBehaviour
     MenuPause menuPause;
     public bool isPaused = false;
     public GameObject pauseMenu;
+    public GameObject ball;
 
 
 
@@ -29,6 +30,7 @@ public class Dissolve : MonoBehaviour
         
         menuPause = pauseMenu.GetComponent<MenuPause>();
         
+
         anim = gameObject.GetComponent<Animator>();
         myColor = Color.white;
     }
@@ -72,6 +74,7 @@ public class Dissolve : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(1);
         levelCompletedMenu.SetActive(true);
+        ball.GetComponent<Rigidbody>().isKinematic = true;
         menuPause.GameIsPaused = true;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
