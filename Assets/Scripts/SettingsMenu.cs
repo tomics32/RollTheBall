@@ -15,9 +15,15 @@ public class SettingsMenu : MonoBehaviour
 
 	Resolution[] resolutions;
 	public Slider[] masterSlider;
+	public Slider mouseSensSlider;
 
 	private void Start()
 	{
+		if(PlayerPrefs.HasKey("Sensitivity"))
+        {
+			mouseSensSlider.value = PlayerPrefs.GetFloat("Sensitivity");
+        }
+
 		masterSlider[0].value = PlayerPrefs.GetFloat("MasterVolume", 0.75f);
 		masterSlider[1].value = PlayerPrefs.GetFloat("MusicVolume", 0.75f);
 		masterSlider[2].value = PlayerPrefs.GetFloat("EffectsVolume", 0.75f);
@@ -112,4 +118,12 @@ public class SettingsMenu : MonoBehaviour
         }
 		
 	}
+
+	public void SetMouseSensitivity(float val)
+    {
+		
+
+		PlayerPrefs.SetFloat("Sensitivity", val);
+		Debug.Log(val);
+    }
 }

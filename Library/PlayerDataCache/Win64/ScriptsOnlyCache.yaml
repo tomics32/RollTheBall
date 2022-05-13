@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - GameOver
     - LevelLoader
     - MenuPause
+    - MouseSensitivity
     - Reset
     - SceneController
     - SettingsMenu
@@ -129,7 +130,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateEditor
     - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
@@ -315,6 +315,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 10458}
     - Class: 114
       Script: {instanceID: 10762}
+    - Class: 114
+      Script: {instanceID: 56278}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1879,7 +1881,7 @@ ScriptsOnlyBuild:
     className: PostProcessResources
   - hash:
       serializedVersion: 2
-      Hash: 4b4f712d3d4f1b59e375a5f212c1ab9f
+      Hash: 9e44e833aeb5615141b8e7dfab490ae7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SettingsMenu
@@ -3113,8 +3115,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualEffectGraph.Runtime.dll
     namespaceName: UnityEngine.VFX.Utility
     className: VFXRaycastBinder
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MouseSensitivity
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Level 1.unity
-  playerPath: C:/Users/tomi/Desktop/RollTheBall 0.611/RollTheBall.exe
+  playerPath: C:/Users/tomi/Desktop/RollTheBall 0.62/RollTheBall.exe
