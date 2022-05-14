@@ -16,6 +16,7 @@ public class SettingsMenu : MonoBehaviour
 	Resolution[] resolutions;
 	public Slider[] masterSlider;
 	public Slider mouseSensSlider;
+	public Dropdown qualityGraphics;
 
 	private void Start()
 	{
@@ -23,6 +24,7 @@ public class SettingsMenu : MonoBehaviour
         {
 			mouseSensSlider.value = PlayerPrefs.GetFloat("Sensitivity");
         }
+		qualityGraphics.value = QualitySettings.GetQualityLevel();
 
 		masterSlider[0].value = PlayerPrefs.GetFloat("MasterVolume", 0.75f);
 		masterSlider[1].value = PlayerPrefs.GetFloat("MusicVolume", 0.75f);
@@ -96,6 +98,8 @@ public class SettingsMenu : MonoBehaviour
 	public void SetQuality(int qualityIndex)
 	{
 		QualitySettings.SetQualityLevel(qualityIndex);
+		PlayerPrefs.SetInt("GraphicsQuality", qualityIndex);
+		
 	}
 
 	public void SetFullScreen(bool isFullscreen)
