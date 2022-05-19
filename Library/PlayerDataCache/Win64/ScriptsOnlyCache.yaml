@@ -1,5 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp-Editor.dll:
+    - ReadmeEditor
     Assembly-CSharp.dll:
     - CountDownTimer
     - Dissolve
@@ -7,6 +9,7 @@ ScriptsOnlyBuild:
     - LevelLoader
     - MenuPause
     - MouseSensitivity
+    - Readme
     - Reset
     - SceneController
     - SettingsMenu
@@ -3123,4 +3126,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Level 1.unity
-  playerPath: C:/Users/tomi/Desktop/RollTheBall 0.641/RollTheBall.exe
+  playerPath: C:/Users/tomi/Desktop/RollTheBall 0.65/RollTheBall.exe
