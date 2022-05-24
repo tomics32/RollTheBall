@@ -13,6 +13,7 @@
 -a="D:\repos\RollTheBall\Library\PlayerScriptAssemblies\UnityEngine.UI.dll"
 -a="D:\repos\RollTheBall\Library\PlayerScriptAssemblies\Unity.ProBuilder.Poly2Tri.dll"
 -a="D:\repos\RollTheBall\Library\PlayerScriptAssemblies\Unity.ProBuilder.KdTree.dll"
+-a="D:\repos\RollTheBall\Library\PlayerScriptAssemblies\Unity.TerrainTools.dll"
 -a="D:\repos\RollTheBall\Library\PlayerScriptAssemblies\Unity.ProBuilder.Examples.dll"
 -a="D:\repos\RollTheBall\Library\PlayerScriptAssemblies\Cinemachine.dll"
 -a="D:\repos\RollTheBall\Library\PlayerScriptAssemblies\Unity.Postprocessing.Runtime.dll"
