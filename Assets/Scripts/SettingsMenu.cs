@@ -20,7 +20,9 @@ public class SettingsMenu : MonoBehaviour
 
 	private void Start()
 	{
-		if(PlayerPrefs.HasKey("Sensitivity"))
+		Cursor.visible = true;
+		Cursor.lockState = CursorLockMode.None;
+		if (PlayerPrefs.HasKey("Sensitivity"))
         {
 			mouseSensSlider.value = PlayerPrefs.GetFloat("Sensitivity");
         }
